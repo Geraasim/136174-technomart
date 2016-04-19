@@ -6,7 +6,355 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <header class="info-header">
+      <div class="container">
+        <h1>техномарт</h1>
+<!-- как надо? текст или картинка-логотип, т.к. на внутр. странице будет ссылка на главную?
+        <div class="index-logo">
+          <img src="img/index-logo.png" width="" height="" alt="Логотип «Техномарт»">
+        </div>
+      -->
+      <!--   label всегда используют?  -->
+        <div>
+          <img src="img/header.png">
+          <form action="#" method="get">
+            Поиск: <input type="text" name="search">
+          </form>
+        </div>
+          <!--окошко со счетчиком как делать?  -->
+          <!-- картинка-спрайт? -->
+        <div>
+          <img src="img/header.png">
+          <a href="#">Закладки: 0</a>
+        </div>
+        <div>
+          <img src="img/header.png">
+          <a href="#">Корзина: 0</a>
+          <a href="#"></a>
+        </div>
+        <!-- надо ли все пункты заворачивать в дивы? и понятьс логику приписывания класса  -->
+        <div>
+          <a href="#">Оформить заказ</a>
+        </div>
 
+      </div>
+    </header>
+    <header class="content-header">
+      <div class="container">
+        <div>
+          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        </div>
+
+        <div class="contacts">
+          <div class="telephon">
+            <img src="img/header.png">
+            <!-- тире кодом прописывать?   -->
+            <!-- надо ли оборачивать номер телефона  -->
+            +7 (812) 555-05-55
+          </div>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+          <a class="registration" href="#">Регистрация</a>
+        </div>
+        <nav class="content-header">
+          <ul>
+            <li>
+              Главная
+            </li>
+            <li>
+              <a href="#">Компания</a>
+            </li>
+            <li>
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Спецпредложения</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- заглавные буквы как в макете? т.е. если там есть?-->
+    <!-- нужен ли мэйн класс контейнер, если у секшнов свои контейнеры? разобраться с контейнерами -->
+    <main class="container">
+      <section class="assortment">
+        <!-- нужны классы для двух этажей (дивы)?  -->
+        <!--  картинки пока везде пнг, надо пересмотреть видео по фотошопу -->
+        <div>
+          <div class="assortment-item materials">
+            <h2>Материалы</h2>
+            <a href="#">на любой вкус</a>
+            <img src="img/assortment.png">
+
+          </div>
+          <div class="assortment-item instruments">
+            <h2>Инструмент</h2>
+            <a href="#">на все случаи</a>
+            <img src="img/assortment.png">
+          </div>
+          <div class="assortment-item technics">
+            <h2>Техника</h2>
+            <a href="#">для стройки</a>
+            <img src="img/assortment.png">
+          </div>
+        </div>
+        <div>
+          <!-- как верстать слайдер?  -->
+          <div class="slider">
+            <h1>Перфораторы</h1>
+            Настоящие мужские игрушки
+            <a class="button button-catalog" href="catalog.html">открыть каталог</a>
+          </div>
+          <div class="assortment-item discount">
+            <h2>Скидки 50%</h2>
+            <a href="#">на 350 товаров</a>
+            <img src="img/assortment.png">
+          </div>
+          <div class="assortment-item delivery">
+            <h2>Доставка</h2>
+            <a href="#">бесплатно</a>
+            <img src="img/assortment.png">
+          </div>
+        </div>
+      </section>
+      <section class="goods">
+        <div>
+          <h1>популярные товары: </h1>
+          <a class="button button-goods" href="#">все популярные товары</a>
+        </div>
+        <!--  не разобралась, не излишние ли классы -->
+        <div class="commodity commodity-main">
+          <article>
+            <img src=img/commodity-1.png>
+            <span class="commodity commodity-item">Перфоратор BOSCH BFG 9000</span>
+            <span class="price price-old">32500 Р.</span>
+            <span class="price price-new">25500 Р.</span>
+          </article>
+          <article>
+            <img src=img/commodity-2.png>
+            <span class="commodity commodity-item">Перфоратор BOSCH BFG 3000</span>
+            <span class="price price-old">22500 Р.</span>
+            <span class="price price-new">15500 Р.</span>
+          </article>
+          <article>
+            <img src=img/commodity-3.png>
+            <span class="commodity commodity-item">Перфоратор BOSCH BFG 6000</span>
+            <span class="price price-old">30500 Р.</span>
+            <span class="price price-new">25500 Р.</span>
+          </article>
+          <article>
+            <img src=img/commodity-4.png>
+            <span class="commodity commodity-item">Перфоратор BOSCH BFG 2000</span>
+
+            <span class="price price-new">12500 Р.</span>
+          </article>
+        </div>
+      </section>
+      <section class="brands">
+        <div>
+          <h1>популярные производители: </h1>
+          <a class="button button-brands" href="#">все производители</a>
+        </div>
+        <!--  нужна ли тут обертка-див? -->
+        <div>
+          <div>
+            <a href="#">
+            <img src="img/brands-1.png">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+            <img src="img/brands-2.png">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+            <img src="img/brands-3.png">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+            <img src="img/brands-4.png">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+            <img src="img/brands-5.png">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+            <img src="img/brands-6.png">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+            <img src="img/brands-7.png">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+            <img src="img/brands-8.png">
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- почему широкий секшн? -->
+      <section class="service">
+        <div class="container">
+          <h1>сервис</h1>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
+              </li>
+              <li>
+                <a href="#">Кредит</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <h1>доставка</h1>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Мы ведь неплохо заработаем,<br>
+              поднимая его на вш этаж!
+            </p>
+            <img src="img/delivery.png" alt="car">
+          </div>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="container">
+          <div class="promo-promo">
+            <h1>компания «техномарт»</h1>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Техномарт работает со многими транспортными компаниями:</p>
+            <nav>
+              <ul>
+                <li>
+                  <img crc="img/decor-line.png">
+                  <!--  ссылка? -->
+                  <span class="promo">Деловые линии</span>
+                </li>
+                <li>
+                  <img crc="img/decor-line.png">
+                  <span class="promo">Автотрейдинг</span>
+                </li>
+                <li>
+                  <img crc="img/decor-line.png">
+                  <span class="promo">ЖелДорЭкспедиция</span>
+                </li>
+              </ul>
+            </nav>
+            <a class="button button-promo-promo" href="#">подробнее о компании</a>
+          </div>
+          <div class="promo-contacts">
+            <h1>контакты</h1>
+            <p>Вы можете забрать товар сами,<br>
+            заехав в наш офис:</p>
+            <img crc="img/map.png" alt="map">
+            <!--  куда писать и как, куда ведет ссылка? -->
+            <!-- похоже на мои баттон. Баттон - вообще здесь не очень хорошо такое имя класса? т.к. не кнопка  -->
+            <a href="#" class="mail">заблудились? напишите нам!</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <!-- или контейнер надо через пробел? не надо лишний див?  -->
+      <div class="container">
+        <div>
+          <!-- здесь ведь не нужен класс? -->
+          <img class="logo-big" src="img/logo-big.png" alt="logo-big">
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="adress">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55</p>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Материалы</a>
+              </li>
+              <li>
+                <a href="#">Техника</a>
+              </li>
+              <li>
+                <a href="#">Инструмент</a>
+              </li>
+              <li>
+                <a href="#">Спецпредложения</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-footer">
+      <div class="container">
+        <div class="copyright">
+          <p>&#169; 2010–2016 Компания «Техномарт»<br>
+          Все права защищены</p>
+        </div>
+        <div class="social">
+          <!-- спрайты? -->
+          <a href=""><img src="img/social.png"></a>
+          <a href=""><img src="img/social.png"></a>
+          <a href=""><img src="img/social.png"></a>
+        </div>
+        <div>
+          <!--в дивы не надо, т.к. есть классы? -->
+          <p class="mail">Обратная связь:<br>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p class="development">Разработано —<br>
+          <a href="https://htmlacademy.ru">htmlacademy.ru</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
