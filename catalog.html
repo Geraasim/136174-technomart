@@ -5,102 +5,58 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="info-header">
+    <header>
       <div class="container">
-        <h1>техномарт</h1>
-        <div>
-          <img src="img/header.png">
-          <form action="#" method="get">
-            Поиск: <input type="text" name="search">
-          </form>
-        </div>
-        <div>
-          <img src="img/header.png">
-          <a href="#">Закладки: 0</a>
-        </div>
-        <div>
-          <img src="img/header.png">
-          <!-- нужны новые классы? или цсс для каталога свой? -->
-          <!--В корзине уже 10 + зеленый цвет -->
-          <a href="#">Корзина: 10</a>
-          <a href="#"></a>
-        </div>
-        <div>
-          <a href="#">Оформить заказ</a>
-        </div>
-      </div>
-    </header>
-    <header class="content-header">
-      <div class="container">
-        <div>
-          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        </div>
-        <div class="contacts">
-          <div class="telephon">
-            <img src="img/header.png">
-            +7 (812) 555-05-55
+        <div class="top-header">
+          <h2 class="logo"><a href="index.html">техномарт</a></h2>
+          <div class="search">
+            <form action="#" method="get">
+              <input type="text" name="search" placeholder="Поиск:">
+            </form>
           </div>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <div class="marker">
+            <a href="#">Закладки: 0</a>
+          </div>
+          <div class="cart full-cart">
+            <a href="#">Корзина: 10</a>
+          </div>
+          <div class="order">
+            <a href="#">Оформить заказ</a>
+          </div>
         </div>
-
-        <!-- ИЗМЕНИТЬ КОД ДЛЯ ЭТОГО БЛОКА -->
-        <!-- <div class="user-block">
-          <a class="login" href="#">Вход</a>
-          <a class="registration" href="#">Регистрация</a>
-        </div> -->
-        <!-- ОСТАЛЮ ПРОСТО ДИВ-->
-        <DIV>
-        </DIV>
-        <nav class="content-header">
-          <ul>
-            <li>
-              Главная
-            </li>
-            <li>
-              <a href="#">Компания</a>
-            </li>
-            <li>
-              <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Спецпредложения</a>
-            </li>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <!-- ДОБАВИТЬ ВЕСЬ КОД МЭЙНА КАТАЛОГА-->
-        <!-- снова последгий секшн РАСТЯНУТ НА ВСЮ ШИРИНУ. ЗАЧЕМ? -->
-      </div>
-    </main>
-    <footer class="main-footer">
-
-      <div class="container">
-        <div>
-          <img class="logo-big" src="img/logo-big.png" alt="logo-big">
-        </div>
-        <div>
-          <nav>
+        <div class="main-header">
+          <div class="contacts">
+            <div class="telephone">
+              <span>+7 (812) 555-05-55</span>
+            </div>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="user-block">
+            <div class="account">
+              <a href="#">Равшан Джамшутович</a>
+              <a href="#" class="logout"></a>
+            </div>
+            <ul>
+              <li><a href="#">Мои заказы</a></li>
+              <li><a href="#">Личный кабинет</a></li>
+            </ul>
+          </div>
+          <div class="main-menu">
             <ul>
               <li>
+                <a href="index.html">Главная</a>
+              </li>
+              <li>
                 <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="catalog.html">Каталог</a>
               </li>
               <li>
                 <a href="#">Новости</a>
               </li>
               <li>
-                <a href="#">Каталог</a>
+                <a href="#">Спецпредложения</a>
               </li>
               <li>
                 <a href="#">Доставка</a>
@@ -109,14 +65,173 @@
                 <a href="#">Контакты</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
-        <div class="adress">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55</p>
+      </div>
+    </header>
+    <!-- нужен класс каталог? -->
+    <main class="container catalog">
+      <!-- не нужен тут див для всей большой части? -->
+      <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="catalog">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Перфораторы</a></li>
+      </ul>
+      <div class="perforator">
+        <h1>Перфораторы</h1>
+      </div>
+      <section class="filter">
+        <form action="#" method="post">
+          <div class="filter-title">
+            <span>фильтр</span>
+          </div>
+          <h2>цена</h2>
+            <div>
+              <input type="range">
+            </div>
+            <div>
+              <span>0</span>
+            </div>
+            <div>
+              <span>—</span>
+            </div>
+            <div>
+              <span>30000</span>
+            </div>
+          <h2>производители</h2>
+            <input type="checkbox" name="brand" id="bosch">
+            <label for="bosch">bosch</label>
+            <input type="checkbox" name="brand" id="interskol">
+            <label for="interskol">интерскол</label>
+            <input type="checkbox" name="brand" id="makita">
+            <label for="makita">makita</label>
+            <input type="checkbox" name="brand" id="dewalt">
+            <label for="dewalt">dewalt</label>
+            <input type="checkbox" name="brand" id="hitachi">
+            <label for="hitachi">hitachi</label>
+          <h2>питание</h2>
+            <input type="radio" name="power" id="battery">
+            <label for="battery">аккумуляторные</label>
+            <input type="radio" name="power" id="electricity">
+            <label for="electricity">сетевые</label>
+          <input type="submit" value="Показать">
+        </form>
+      </section>
+      <section class="sorting">
+        <div class="corting-menu">
+          <span>Сортировка:</span>
+          <ul>
+            <li><a href"#">по цене</a></li>
+            <li><a href"#">по типу</a></li>
+            <li><a href"#">по функционалу</a></li>
+            <li><a href"#"></a></li>
+            <li><a href"#"></a></li>
+          </ul>
+          <!-- треугольники потом??-->
         </div>
-        <div>
-          <nav>
+        <article>
+          <img src=img/commodity-2.1.png>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 3000</span>
+          <span class="price price-old">22500 Р.</span>
+          <span class="price price-new">15500 Р.</span>
+        </article>
+        <article>
+          <img src=img/commodity-2.2.png>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 6000</span>
+          <span class="price price-old">30500 Р.</span>
+          <span class="price price-new">25500 Р.</span>
+        </article>
+        <article>
+          <a href="#">купить</a>
+          <a href="#">в закладки</a>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 2000</span>
+          <span class="price price-new">15500 Р.</span>
+        </article>
+        <article>
+          <img src=img/commodity-2.4.png>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 3000</span>
+          <span class="price price-old">22500 Р.</span>
+          <span class="price price-new">15500 Р.</span>
+        </article>
+        <article>
+          <img src=img/commodity-2.5.png>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 6000</span>
+          <span class="price price-old">30500 Р.</span>
+          <span class="price price-new">25500 Р.</span>
+        </article>
+        <article>
+          <img src=img/commodity-2.6.png>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 2000</span>
+          <span class="price price-new">15500 Р.</span>
+        </article>
+        <article>
+          <img src=img/commodity-2.7.png>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 3000</span>
+          <span class="price price-old">22500 Р.</span>
+          <span class="price price-new">15500 Р.</span>
+        </article>
+        <article>
+          <img src=img/commodity-2.8.png>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 6000</span>
+          <span class="price price-old">30500 Р.</span>
+          <span class="price price-new">25500 Р.</span>
+        </article>
+        <article>
+          <img src=img/commodity-2.9.png>
+          <span class="commodity commodity-item">Перфоратор BOSCH BFG 2000</span>
+          <span class="price price-new">12500 Р.</span>
+        </article>
+      </section>
+      <section class="affix">
+        <h2>Пара слов о перфораторах</h2>
+        <!-- третье предл. обязательно должно начинаться на 2-й строке? плохо смотрится-->
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
+        ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        <div class="pages">
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">следующая</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="main-footer">
+          <div>
+            <!-- т.е. мы задали класс Лого для логотипаю но тут, в футере он больше по размеру. изображение зададим в цсс через хедер-лого и футер-лого? -->
+            <!--и если класс задан в аш2, то див лишний? -->
+            <h2 class="logo"><a href="index.html">техномарт</a></h2>
+          </div>
+          <!--если здесь класс футер-меню, то в хедере надо не мэйн-меню, а хедер-меню? или нет? -->
+          <div class="footer-menu-main">
+            <ul>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="adress">
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55</span>
+          </div>
+          <div class="footer-menu-assortment">
             <ul>
               <li>
                 <a href="#">Материалы</a>
@@ -131,28 +246,28 @@
                 <a href="#">Спецпредложения</a>
               </li>
             </ul>
-          </nav>
+          </div>
+        </div>
+        <div class="sub-footer">
+          <div class="copyright">
+            <span>&#169; 2010–2016 Компания «Техномарт»<br>
+            Все права защищены</span>
+          </div>
+          <div class="social">
+            <!-- правильно ли я понимаю, что если у родителя есть класс (сошиал), о детям задаем с расширением (просто "сошиал-фб"); а если у родителя нет класса, то детям задаем через пробел: "сошиал сошиал-вк-->
+            <!--извиняюсь за длинные строки, не настроила перенос, укорачивание строк еще -->
+            <!--я забыла, тут спрайт будет, оставляем картинки? -->
+            <a class="social-vk" href="#"><img src="img/social.png"></a>
+            <a class="social-fb" href="#"><img src="img/social.png"></a>
+            <a class="social-inst "href="#"><img src="img/social.png"></a>
+          </div>
+          <div>
+            <!--в дивы не надо, т.к. есть классы? -->
+            <span class="mail">Обратная связь:<br>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+            <span class="development">Разработано —<br>
+            <a href="https://htmlacademy.ru">htmlacademy.ru</span>
+          </div>
         </div>
       </div>
     </footer>
-    <footer class="footer-footer">
-      <div class="container">
-        <div class="copyright">
-          <p>&#169; 2010–2016 Компания «Техномарт»<br>
-          Все права защищены</p>
-        </div>
-        <div class="social">
-          <a href=""><img src="img/social.png"></a>
-          <a href=""><img src="img/social.png"></a>
-          <a href=""><img src="img/social.png"></a>
-        </div>
-        <div>
-          <p class="mail">Обратная связь:<br>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="development">Разработано —<br>
-          <a href="https://htmlacademy.ru">htmlacademy.ru</p>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
