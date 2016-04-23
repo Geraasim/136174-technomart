@@ -6,241 +6,203 @@
   </head>
   <body>
     <header>
-      <!-- одна обертка для всего хедера? или для всех внутренних нужна своя?  -->
-      <div class="container">
-        <div class="top-header">
-          <!-- ссылка всегда внутри аш1?, можно наоборот (аш1 внутри ссылки)? и почему? -->
-          <!-- если один аш1 на страницу, а на главной его нет, делаю аш2? -->
+      <div class="top-header">
+        <div class="container">
           <h2 class="logo"><a href="index.html">техномарт</a></h2>
-          <!-- здесь нужен див? или можно имгу класс задать? или имгам не задают? -->
           <div class="search">
             <form action="#" method="get">
               <input type="text" name="search" placeholder="Поиск:">
             </form>
           </div>
-          <!-- или что тут чаще исп. в качестве назв. класса - choice? selection? -->
-          <!-- тот же вопрос - задают класс ссылке? или нужен все-таки див?-->
-          <div class="marker">
+          <div class="bookmark">
             <a href="#">Закладки: 0</a>
           </div>
-          <!-- старт-кар -класс ок, или что есть устоявшееся? эмпти? нуль? -->
-          <!-- вопрос-уточнение. если есть корзина с двумя состояниями, то мы каждую задаем через 2 класса? общий + класс-состояние? -->
-          <div class="cart start-cart">
-            <a href="#">Корзина: 0</a>
+          <div class="cart full-cart">
+            <a href="#">Корзина: 10</a>
           </div>
           <div class="order">
             <a href="#">Оформить заказ</a>
           </div>
         </div>
-      <!-- ок ли называть классы по разным классификациям - топ и мэйн, для футера: мэйн и суб? -->
-      <!-- здесь для класса достаточно мэйн-хедер? или надо так: "хедер мейн-хедер"-->
-        <div class="main-header">
+      </div>
+      <div class="main-header">
+        <div class="container">
+          <div class="lead">
+            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          </div>
           <div class="contacts">
-            <div class="telephone">
-              <span>+7 (812) 555-05-55</span>
-            </div>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <span class="telephone">+7 (812) 555-05-55</span>
+            <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
           <div class="user-block">
-            <a class="login" href="#">Вход</a>
-            <a class="registration" href="#">Регистрация</a>
+            <div class="account">
+              <a href="#">Равшан Джамшутович</a>
+              <a href="#" class="logout"></a>
+            </div>
+            <ul>
+              <li><a href="#">Мои заказы</a></li>
+              <li><a href="#">Личный кабинет</a></li>
+            </ul>
           </div>
           <div class="main-menu">
             <ul>
-              <li>
-                <a href="index.html">Главная</a>
-              </li>
-              <li>
-                <a href="#">Компания</a>
-              </li>
-              <li>
-                <a href="catalog.html">Каталог</a>
-              </li>
-              <li>
-                <a href="#">Новости</a>
-              </li>
-              <li>
-                <a href="#">Спецпредложения</a>
-              </li>
-              <li>
-                <a href="#">Доставка</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <main class="container">
+    <main>
       <section class="assortment">
-        <div class="assortment-top">
-          <div class="assortment-item materials">
-            <h3>Материалы</h3>
-            <a href="#">на любой вкус</a>
+        <div class="container">
+          <div class="assortment-top">
+            <div class="assortment-item materials">
+              <h3>Материалы</h3>
+              <a href="#">на любой вкус</a>
+            </div>
+              <div class="assortment-item instruments">
+              <h3>Инструмент</h3>
+              <a href="#">на все случаи</a>
+            </div>
+              <div class="assortment-item technics">
+              <h3>Техника</h3>
+              <a href="#">для стройки</a>
+            </div>
           </div>
-          <div class="assortment-item instruments">
-            <h3>Инструмент</h3>
-            <a href="#">на все случаи</a>
-          </div>
-          <div class="assortment-item technics">
-            <h3>Техника</h3>
-            <a href="#">для стройки</a>
-          </div>
-        </div>
-        <div class="assortment-sub">
-          <div class="slider">
-            <h2>Перфораторы</h2>
-            <span>Настоящие мужские игрушки</span>
-            <a class="button button-catalog" href="catalog.html">открыть каталог</a>
-            <!-- стрелочки на картинке не прописываем, предположительно цсс, а саму картинку надо имгом прописать? -->
-          </div>
-          <div class="assortment-item discount">
-            <h3>Скидки 50%</h3>
-            <a href="#">на 350 товаров</a>
-          </div>
-          <div class="assortment-item delivery">
-            <h3>Доставка</h3>
-            <a href="#">бесплатно</a>
+          <div class="assortment-sub">
+            <div class="slider">
+              <h2>Перфораторы</h2>
+              <span>Настоящие мужские игрушки</span>
+              <a class="button button-catalog" href="catalog.html">открыть каталог</a>
+            </div>
+            <div class="assortment-item discount">
+              <h3>Скидки 50%</h3>
+              <a href="#">на 350 товаров</a>
+            </div>
+            <div class="assortment-item delivery">
+              <h3>Доставка</h3>
+              <a href="#">бесплатно</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="goods">
-        <!-- нам нужно оборачивать в див поп.товары с "какбы -кнопокой"? -->
-        <div>
-          <!-- почему надо аш3, а не аш2? -->
-          <h2>популярные товары: </h2>
-          <a class="button button-goods" href="#">все популярные товары</a>
-        </div>
-        <div class="commodity">
-          <article>
-            <img src=img/commodity-1.png>
-            <!-- тут в классе лишнее первое коммодити? и почему?  -->
-            <span class="commodity commodity-item">Перфоратор BOSCH BFG 9000</span>
-            <span class="price price-old">32500 Р.</span>
-            <span class="price price-new">25500 Р.</span>
-          </article>
-          <article>
-            <img src=img/commodity-2.png>
-            <span class="commodity commodity-item">Перфоратор BOSCH BFG 3000</span>
-            <span class="price price-old">22500 Р.</span>
-            <span class="price price-new">15500 Р.</span>
-          </article>
-          <article>
-            <img src=img/commodity-3.png>
-            <span class="commodity commodity-item">Перфоратор BOSCH BFG 6000</span>
-            <span class="price price-old">30500 Р.</span>
-            <span class="price price-new">25500 Р.</span>
-          </article>
-          <article>
-            <img src=img/commodity-4.png>
-            <span class="commodity commodity-item">Перфоратор BOSCH BFG 2000</span>
-            <!-- здесь нет старой цены, но это неважно, т.к. цсс пропишет положение новой? -->
-            <span class="price price-new">12500 Р.</span>
-          </article>
+        <div class="container">
+          <div class="best">
+            <h3>популярные товары:</h3>
+            <a class="button button-goods" href="#">все популярные товары</a>
+          </div>
+            <div class="commodity">
+            <article>
+              <img src="img/commodity-1.png">
+              <h1>Перфоратор BOSCH BFG 9000</h1>
+              <span class="price price-old">32500 Р.</span>
+              <a href="#"><span class="price price-new">25500 Р.</span></a>
+            </article>
+            <article>
+              <img src="img/commodity-2.png">
+              <h1>Перфоратор BOSCH BFG 3000</h1>
+              <span class="price price-old">22500 Р.</span>
+              <a href="#"><span class="price price-new">15500 Р.</span></a>
+            </article>
+            <article>
+              <img src="img/commodity-3.png">
+              <h1>Перфоратор BOSCH BFG 6000</h1>
+              <span class="price price-old">30500 Р.</span>
+              <a href="#"><span class="price price-new">25500 Р.</span></a>
+            </article>
+            <article>
+              <img src="img/commodity-4.png">
+              <h1>Перфоратор BOSCH BFG 2000</h1>
+              <a href="#"><span class="price price-new">12500 Р.</span></a>
+            </article>
+          </div>
         </div>
       </section>
       <section class="brands">
-        <!--  нужна ли тут обертка-див? или она излишняя?-->
-        <div>
-          <h2>популярные производители: </h2>
-          <a class="button button-brands" href="#">все производители</a>
-        </div>
-        <div>
-          <!-- не могу разобраться в дивами. тут он нужен для этой группы? -->
-          <!-- пишут так в строчку? или надо ссылки на одной, а имги на следующей? -->
-          <a href="#"><img src="img/brands-1.png"></a>
-          <a href="#"><img src="img/brands-2.png"></a>
-          <a href="#"><img src="img/brands-3.png"></a>
-          <a href="#"><img src="img/brands-4.png"></a>
-          <a href="#"><img src="img/brands-5.png"></a>
-          <a href="#"><img src="img/brands-6.png"></a>
-          <a href="#"><img src="img/brands-7.png"></a>
-          <a href="#"><img src="img/brands-8.png"></a>
+        <div class="container">
+          <div class="best">
+            <h3>популярные производители:</h3>
+            <a class="button button-brands" href="#">все производители</a>
+          </div>
+          <div class="brands-item">
+            <a href="#"><img src="img/brands-1.png"></a>
+            <a href="#"><img src="img/brands-2.png"></a>
+            <a href="#"><img src="img/brands-3.png"></a>
+            <a href="#"><img src="img/brands-4.png"></a>
+            <a href="#"><img src="img/brands-5.png"></a>
+            <a href="#"><img src="img/brands-6.png"></a>
+            <a href="#"><img src="img/brands-7.png"></a>
+            <a href="#"><img src="img/brands-8.png"></a>
+          </div>
         </div>
       </section>
       <section class="service">
-        <!-- почему в секшне выше Поп.товары с псевдокнопкой объединены в див, а тут сервисы с фразой -нет?-->
-        <h2>сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <div class="slider-service-left">
-          <ul>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Гарантия</a>
-            </li>
-            <li>
-              <a href="#">Кредит</a>
-            </li>
-          </ul>
-          <div class="slider-service-right">
-            <h2>доставка</h2>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Мы ведь неплохо заработаем,<br>
-              поднимая его на вш этаж!
-            </p>
-            <img src="img/delivery.png" alt="car">
+        <div class="container">
+          <h3>сервисы</h3>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="slider-service-left">
+            <ul>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
+            </ul>
+            <div class="slider-service-right">
+              <h3>доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Мы ведь неплохо заработаем,<br>
+                поднимая его на вш этаж!
+              </p>
+              <img src="img/delivery.png" alt="car">
+            </div>
           </div>
         </div>
       </section>
       <section class="promo">
-        <div class="promo-promo">
-          <h2>компания «техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:</p>
-          <ul>
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="button button-promo-promo" href="#">подробнее о компании</a>
-        </div>
-        <div class="promo-contacts">
-          <h2>контакты</h2>
-          <p>Вы можете забрать товар сами,<br>
-          заехав в наш офис:</p>
-          <a href="#">
-          <img crc="img/map.png" alt="map">
-          </a>
-          <a href="#" class="mail">заблудились? напишите нам!</a>
+        <div class="container">
+          <div class="promo-promo">
+            <h3>компания «техномарт»</h3>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Техномарт работает со многими транспортными компаниями:</p>
+            <ul>
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="button button-promo-promo" href="#">подробнее о компании</a>
+          </div>
+          <div class="promo-contacts">
+            <h3>контакты</h3>
+            <span>Вы можете забрать товар сами,<br>
+            заехав в наш офис:</span>
+            <a href="#"><img crc="img/map.png" alt="map"></a>
+            <a href="#" class="mail">заблудились? напишите нам!</a>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="container">
-        <div class="main-footer">
-          <div>
-            <!-- т.е. мы задали класс Лого для логотипаю но тут, в футере он больше по размеру. изображение зададим в цсс через хедер-лого и футер-лого? -->
-            <!--и если класс задан в аш2, то див лишний? -->
-            <h2 class="logo"><a href="index.html">техномарт</a></h2>
-          </div>
-          <!--если здесь класс футер-меню, то в хедере надо не мэйн-меню, а хедер-меню? или нет? -->
+      <div class="main-footer">
+        <div class="container">
+          <h2 class="logo"><a href="index.html">техномарт</a></h2>
           <div class="footer-menu-main">
             <ul>
-              <li>
-                <a href="#">Компания</a>
-              </li>
-              <li>
-                <a href="#">Новости</a>
-              </li>
-              <li>
-                <a href="catalog.html">Каталог</a>
-              </li>
-              <li>
-                <a href="#">Доставка</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </div>
           <div class="adress">
@@ -249,36 +211,26 @@
           </div>
           <div class="footer-menu-assortment">
             <ul>
-              <li>
-                <a href="#">Материалы</a>
-              </li>
-              <li>
-                <a href="#">Техника</a>
-              </li>
-              <li>
-                <a href="#">Инструмент</a>
-              </li>
-              <li>
-                <a href="#">Спецпредложения</a>
-              </li>
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>
             </ul>
           </div>
         </div>
-        <div class="sub-footer">
-          <div class="copyright">
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="info copyright">
             <span>&#169; 2010–2016 Компания «Техномарт»<br>
             Все права защищены</span>
           </div>
           <div class="social">
-            <!-- правильно ли я понимаю, что если у родителя есть класс (сошиал), о детям задаем с расширением (просто "сошиал-фб"); а если у родителя нет класса, то детям задаем через пробел: "сошиал сошиал-вк-->
-            <!--извиняюсь за длинные строки, не настроила перенос, укорачивание строк еще -->
-            <!--я забыла, тут спрайт будет, оставляем картинки? -->
             <a class="social-vk" href="#"><img src="img/social.png"></a>
             <a class="social-fb" href="#"><img src="img/social.png"></a>
-            <a class="social-inst "href="#"><img src="img/social.png"></a>
+            <a class="social-inst" href="#"><img src="img/social.png"></a>
           </div>
-          <div>
-            <!--в дивы не надо, т.к. есть классы? -->
+          <div class="info">
             <span class="mail">Обратная связь:<br>
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
             <span class="development">Разработано —<br>
