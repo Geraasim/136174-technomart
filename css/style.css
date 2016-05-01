@@ -1,3 +1,27 @@
+html,
+body {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  background-color: #f1f5f7;
+
+}
+
+.top-header {
+  background-color: #293449;
+  height: 55px;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+
 body {
   font-family: PT Sans, sans-serif;
   font-size: 13px;
@@ -5,13 +29,279 @@ body {
   color: #000000;
   font-weight: normal;
 }
-
+/*
 header h2 {
   font-family: Cuprum Regular, sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
 }
+*/
+
+a.logo-header {
+  position: absolute;
+  border-bottom: 5px solid #b52933;
+  display: inline-block;
+  padding-top: 15px;
+  text-align: center;
+  font-family: Cuprum Regular, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight:normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ee3643;
+  width: 220px;
+  height: 55px;
+}
+
+
+a.logo-footer {
+  font-family: Cuprum Regular, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight:normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #ee3643;
+  width: 220px;
+}
+
+.top-header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search {
+
+  width: 260px;
+
+  font-family: Cuprum Regular, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight:normal;
+
+  color: #ffffff;
+}
+
+.bookmark {
+  width: 150px;
+  color: #ffffff;
+  font-family: Cuprum Regular, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight:normal;
+}
+
+.cart {
+  width: 150px;
+  color: #ffffff;
+  font-family: Cuprum Regular, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight:normal;
+}
+
+.order {
+  width: 150px;
+  background-color: #63a63e;
+  color: #ffffff;
+  font-family: Cuprum Regular, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight:normal;
+  padding-top: 18px;
+}
+
+.main-header {
+  padding-bottom: 60px;
+}
+.main-menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  border-bottom: 5px solid #293449;
+  background-color: #32425c;
+  height: 55px;
+}
+
+.main-menu a {
+
+  display: inline-block;
+  padding-top: 19px;
+  text-align: center;
+  font-family: Cuprum Regular, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight:normal;
+
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.nav {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+/*
+.main-menu a:last-child {
+  margin-right: 55px;
+}*/
+
+
+.main-header {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.lead {
+  width: 320px;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: Cuprum Italic;
+  font-weight: normal;
+  color: #ee3643;
+}
+
+.contacts {
+  width: 340px;
+
+}
+
+.user-block {
+  width: 280px;
+}
+
+.assortment {
+  margin-bottom: 35px;
+}
+
+.assortment-top {
+  display: flex;
+  padding-top: 60px;
+}
+
+.materials {
+  width: 300px;
+  height: 123px;
+  outline:1px solid red;
+  margin-right: 20px;
+}
+
+.instruments {
+  width: 300px;
+  height: 123px;
+  outline:1px solid red;
+  margin-right: 20px;
+}
+
+.technics {
+  width: 300px;
+  height: 123px;
+  outline:1px solid red;
+}
+
+.assortment-sub {
+  display: flex;
+  width: 940px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  /*align-content: stretch;*/
+}
+
+.slider {
+  background-image: url("img/slider1.jpg");
+  width: 620px;
+  height: 265px;
+  outline:1px solid blue;
+  margin-right: 20px;
+
+}
+
+.discount {
+  width: 300px;
+  height: 123px;
+  outline:1px solid red;
+}
+
+.delivery {
+  width: 300px;
+  height: 123px;
+  outline:1px solid red;
+}
+
+.best {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f3ec;
+  font-family: Cuprum Regular;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 30px;
+  height: 90px;
+
+  color: #32425c;
+  margin-top: 20px;
+}
+
+.button {
+  /*display: inline-block;*/
+  background-color: #ee3643;
+  width: 250px;
+  color: #ffffff;
+  font-family: Cuprum Regular;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 14px;
+
+  text-align: center;
+  margin-right: 25px;
+}
+
+.commodity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.commodity article {
+  margin-right: 20px;
+  outline: 1px solid green;
+}
+
+.commodity article:last-child {
+  margin-right: 0;
+}
+
+
+
+.brands-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brands-item a {
+  display: inline-block;
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  outline: 1px solid green;
+}
+
+.brands-item a:last-child {
+  margin-right: 0;
+}
+
 
 main h1 {
   font-family: Cuprum Regular, sans-serif;
@@ -55,10 +345,4 @@ form h2 {
   line-height: 30px;
   color: #000000;
   font-weight: bold;
-}
-footer h2 {
-  font-family: Cuprum Regular, sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  color: #ffffff;
 }
