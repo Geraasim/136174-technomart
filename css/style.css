@@ -406,6 +406,9 @@ main-footer h2 {
 
 /*  CATALOG */
 
+main .container {
+  width: 940px;
+}
 .breadcrumbs {
   display: flex;
   justify-content: flex-start;
@@ -419,7 +422,7 @@ main-footer h2 {
   display: flex;
   padding-right: 20px;
   flex-direction: column;
-  width: 240px;
+  width: 220px;
 }
 .filter-title {
   background-color: #f7f3ec;
