@@ -78,10 +78,10 @@ ul {
   display: flex;
   justify-content: flex-end;
 }
-
 .top-header .search {
   padding-left: 220px;
 }
+
 /*
 .top-header .container {
   display: flex;
@@ -525,6 +525,5 @@ form h2 {
 }
 
 }
-
 
 }
