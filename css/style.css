@@ -21,6 +21,12 @@ body {
   color: #000000;
   font-weight: normal;
 }
+.logo {
+  margin-top: 0;
+}
+h1, h2, h3 {
+  margin: 0;
+}
 
 /*
 header h2 {
@@ -68,11 +74,14 @@ ul {
   text-align: center;
   border-bottom: 5px solid #b52933;
 }
-.top-header-right {
+.top-header .container {
   display: flex;
   justify-content: flex-end;
 }
 
+.top-header .search {
+  padding-left: 220px;
+}
 /*
 .top-header .container {
   display: flex;
@@ -171,6 +180,7 @@ ul {
 }
 .assortment {
   padding-top: 60px;
+  padding-bottom: 55px;
 }
 .assortment .container {
   display: flex;
@@ -236,11 +246,11 @@ ul {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-left: 30px;
   height: 90px;
   color: #32425c;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 /*display: inline-block;*/
@@ -280,9 +290,11 @@ margin-right: 25px;
   justify-content: space-between;
   /*margin-top: 20px;*/
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .commodity article {
-  margin-right: 20px;
+  /*margin-right: 20px;*/
+  width: 220px;
   outline: 1px solid green;
 }
 .commodity article:last-child {
@@ -293,8 +305,8 @@ margin-right: 25px;
   flex-wrap: wrap;
   width: 940px;
   justify-content: space-between;
-  align-content: space-between;
-  height: 310px;
+  /*align-content: space-between;*/
+  /*height: 310px;*/
   padding-top: 20px;
   padding-bottom: 85px;
 }
@@ -304,10 +316,12 @@ margin-right: 25px;
   height: 145px;
   /*margin-right: 20px;*/
   outline: 1px solid green;
+  margin-bottom: 20px;
 }
 .service {
   background-color: #f2f6f8;
   padding-top: 68px;
+  padding-bottom: 60px;
 }
 .service .container {
   display: flex;
@@ -326,7 +340,7 @@ margin-right: 25px;
 .slider-service-right {
   width: 620px;
   padding-left: 80px;
-  background: url("../img/service-delivery.png") no-repeat 100% 0;
+  background: url("../img/service-delivery.png") no-repeat 100% 20px;
 }
 .promo .container {
   display: flex;
@@ -438,16 +452,16 @@ main .container {
   width: 700px;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 1000px;
+  /*min-height: 1000px;*/
   align-content: space-between;
 }
 .goods-catalog article {
   width: 220px;
   outline: 1px solid red;
-  min-height: 320px;
-  /*margin-bottom: 20px;*/
+  /*min-height: 320px;*/
+  margin-bottom: 20px;
 }
-.perforators {
+.catalog-selection {
   display: flex;
 }
 .paginator ul {
@@ -509,5 +523,8 @@ form h2 {
   color: #000000;
   font-weight: bold;
 }
+
+}
+
 
 }
