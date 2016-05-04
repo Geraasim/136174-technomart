@@ -15,7 +15,7 @@ html, body {
   margin: 0 auto;
 }
 body {
-  font-family: PT Sans, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -48,7 +48,7 @@ ul {
   /*padding-top: 15px;
   padding-bottom: 15px;*/
   text-align: center;
-  font-family: Cuprum Regular, sans-serif;
+  font-family: 'Cuprum', sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
@@ -61,7 +61,7 @@ ul {
 }
 .logo-footer {
   display: block;
-  font-family: Cuprum Regular, sans-serif;
+  font-family: 'Cuprum', sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -76,7 +76,6 @@ ul {
 }
 .top-header .container {
   display: flex;
-  /*justify-content: flex-end;*/
   width: 940px;
   align-items: flex-start;
   flex-wrap: nowrap;
@@ -185,6 +184,33 @@ ul {
   padding-top: 60px;
   padding-bottom: 55px;
 }
+.assortment-item h3 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 26px;
+  padding-left: 23px;
+}
+.assortment-item a {
+  display: block;
+  width: 135px;
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.1;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
 .assortment .container {
   display: flex;
 }
@@ -200,6 +226,8 @@ ul {
   width: 300px;
   height: 123px;
   outline: 1px solid red;
+  background: url("../img/materials.png") no-repeat 220px 20px;
+  background-color: #f6b22d;
   /*margin-right: 20px;*/
 }
 .instruments {
@@ -207,11 +235,15 @@ ul {
   height: 123px;
   outline: 1px solid red;
   margin-right: 20px;
+  background: url("../img/instruments.png") no-repeat 197px 33px;
+  background-color: #4aafde;
 }
 .technics {
   width: 300px;
   height: 123px;
   outline: 1px solid red;
+  background: url("../img/technics.png") no-repeat 190px 30px;
+  background-color: #cc79d1;
 }
 .assortment-right {
   display: flex;
@@ -230,15 +262,42 @@ ul {
   outline: 1px solid blue;
   /*margin-right: 20px;*/
 }
+.slider h2 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-left: 25px;
+  margin-top: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.button-catalog {
+  margin-left: 25px;
+  margin-top: 115px;
+  width: 195px;
+}
+.slider span {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-left: 25px;
+}
 .discount {
   width: 300px;
   height: 123px;
   outline: 1px solid red;
+  background: url("../img/discount.png") no-repeat 195px 25px;
+  background-color: #85d179;
 }
 .delivery {
   width: 300px;
   height: 123px;
   outline: 1px solid red;
+  background: url("../img/delivery.png") no-repeat 190px 30px;
+  background-color: #f6b22d;
 }
 .best {
   display: flex;
@@ -272,12 +331,20 @@ margin-right: 25px;
 
 */
 
+.best h3 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+}
 .button {
   display: block;
   background-color: #ee3643;
   width: 250px;
   color: #ffffff;
-  font-family: Cuprum Regular;
+  font-family: 'Cuprum', sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -306,27 +373,35 @@ margin-right: 25px;
 
 
 }
+
+/*
+.brands-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  justify-content: space-between;*/
+
+/*align-content: space-between;*/
+
+/*height: 310px;*/
+
+/*padding-top: 20px;
+  padding-bottom: 85px;
+} */
 .brands-item {
   display: flex;
   flex-wrap: wrap;
   width: 940px;
   justify-content: space-between;
-  /*align-content: space-between;*/
-  /*height: 310px;*/
-
   padding-top: 20px;
   padding-bottom: 85px;
 }
 .brands-item a {
-  /*display: inline-block;*/
-  /*display: block;*/
-  
   width: 220px;
   height: 145px;
-  /*margin-right: 20px;*/
-
   outline: 1px solid green;
   margin-bottom: 20px;
+  display: block;
 }
 .service {
   background-color: #f2f6f8;
@@ -533,6 +608,16 @@ form h2 {
   line-height: 30px;
   color: #000000;
   font-weight: bold;
+}
+
+}
+
+}
+
+}
+
+}
+
 }
 
 }
