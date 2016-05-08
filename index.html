@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
         <div class="bookmark">
           <a href="#">Закладки: 0</a>
         </div>
-        <div class="cart full-cart">
+        <div class="cart empty-cart">
           <a href="#">Корзина: 0</a>
         </div>
         <div class="order">
@@ -41,14 +41,8 @@
           <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="user-block">
-          <div class="account">
-            <a href="#">Равшан Джамшутович</a>
-            <a href="#" class="logout"></a>
-          </div>
-          <ul>
-            <li><a href="#">Мои заказы</a></li>
-            <li><a href="#">Личный кабинет</a></li>
-          </ul>
+          <a class="login" href="#">Войти</a>
+          <a class="registration" href="#">Регистрация</a>
         </div>
         <div class="main-menu">
           <nav>
@@ -72,6 +66,7 @@
         <div class="assortment-left">
           <div class="assortment-item materials">
             <h3>Материалы</h3>
+            <div class="flag flag-new">new</div>
             <a href="#">на любой вкус</a>
           </div>
           <div class="assortment-item instruments">
@@ -108,26 +103,52 @@
         </div>
         <div class="commodity">
           <article>
-            <img src="img/bfg9000.png" width="184" height="164" alt="bfg9000">
+            <div class="actions">
+              <a class="buy" href="#">купить</a>
+              <a class="bookmark" href="#">в закладки</a>
+            </div>
+            <div class="image">
+              <img src="img/bfg9000.png" width="184" height="164" alt="bfg9000">
+            </div>
             <h1>Перфоратор BOSCH BFG 9000</h1>
             <span class="price price-old">32500 Р.</span>
             <a href="#" class="price price-new">25500 Р.</a>
           </article>
           <article>
-            <img src="img/bfg3000.png" width="127" height="112" alt="bfg3000">
+            <div class="actions">
+              <a class="buy" href="#">купить</a>
+              <a class="bookmark" href="#">в закладки</a>
+            </div>
+            <div class="image">
+              <img src="img/bfg3000.png" width="127" height="112" alt="bfg3000">
+            </div>
             <h1>Перфоратор BOSCH BFG 3000</h1>
             <span class="price price-old">22500 Р.</span>
             <a href="#" class="price price-new">15500 Р.</a>
           </article>
           <article>
-            <img src="img/bfg6000.png" width="144" height="128" alt="bfg6000">
+            <div class="actions">
+              <a class="buy" href="#">купить</a>
+              <a class="bookmark" href="#">в закладки</a>
+            </div>
+            <div class="image">
+              <img src="img/bfg6000.png" width="144" height="128" alt="bfg6000">
+            </div>
             <h1>Перфоратор BOSCH BFG 6000</h1>
             <span class="price price-old">30500 Р.</span>
             <a href="#" class="price price-new">25500 Р.</a>
           </article>
           <article>
-            <img src="img/bfg2000.png" width="127" height="112" alt="bfg2000">
+            <div class="flag flag-new">new</div>
+            <div class="actions">
+              <a class="buy" href="#">купить</a>
+              <a class="bookmark" href="#">в закладки</a>
+            </div>
+            <div class="image">
+              <img src="img/bfg2000.png" width="127" height="112" alt="bfg2000">
+            </div>
             <h1>Перфоратор BOSCH BFG 2000</h1>
+            <span class="price price-old"></span>
             <a href="#" class="price price-new">12500 Р.</a>
           </article>
         </div>
