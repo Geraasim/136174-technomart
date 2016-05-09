@@ -6,11 +6,13 @@ html, body {
 
 .main-header {
   background-color: #f1f5f7;
+  /*min-width: 940px;*/
 }
 
 .top-header {
   background-color: #293449;
   height: 42px;
+  /*min-width: 940px;*/
 }
 
 .container {
@@ -38,6 +40,11 @@ ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 main h1 {
@@ -185,8 +192,8 @@ ul {
 
 .main-menu {
   width: 940px;
-  padding-bottom: 50px;
-  /*padding-top: 45px;*/
+  padding-bottom: 60px;
+  padding-top: 40px;
 }
 
 .main-menu ul {
@@ -330,6 +337,7 @@ ul {
   background-color: inherit;
   text-align: center;
   text-decoration: underline;
+  padding-top: 0;
 }
 
 .personal li:last-child::before {
@@ -416,9 +424,7 @@ ul {
   height: 410px;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*padding-top: 20px;*/
   flex-direction: column;
-  /*align-content: stretch;*/
 }
 
 .slider {
@@ -702,28 +708,92 @@ article .flag-new,
 .service {
   background-color: #f2f6f8;
   padding-top: 68px;
-  padding-bottom: 60px;
+  /*padding-bottom: 60px;*/
+  /*min-width: 940px;*/
 }
 .service .container {
   display: flex;
   width: 940px;
   flex-wrap: wrap;
   /*align-content: space-between;*/
-
   justify-content: space-between;
 }
+
 .service-service {
   width: 940px;
   padding-bottom: 75px;
 }
+
+.service-service h3 {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.service p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+
+}
+
+.slider-service-right h3 {
+  font-family: "Cuprum", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
 .slider-service-left {
   width: 240px;
 }
+
 .slider-service-right {
   width: 620px;
-  padding-left: 80px;
+  min-height: 280px;
+  /*padding-left: 80px;*/
   background: url("../img/service-delivery.png") no-repeat 100% 20px;
 }
+
+.slider-service-left ul {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.slider-service-left li {
+  width: 240px;
+  background-color: #32425c;
+
+  color: #ffffff;
+  font-family: "Cuprum", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 0;
+  padding-left: 20px;
+}
+
+.slider-service-left a {
+
+
+  color: #ffffff;
+  /*font-family: "Cuprum", sans-serif;*/
+  /*font-size: 21px;*/
+  /*line-height: 30px;*/
+  /*font-weight: bold;*/
+  text-decoration: none;
+  /*padding: 15px 0;*/
+}
+
 .promo .container {
   display: flex;
   padding-bottom: 90px;
@@ -755,6 +825,7 @@ article .flag-new,
 
 .main-footer {
   background-color: #32425c;
+  /*min-width: 940px;*/
 }
 
 .main-footer .container {
@@ -810,6 +881,7 @@ main-footer h2 {
 
 .sub-footer {
   background-color: #293449;
+  /*min-width: 940;*/
 }
 .sub-footer .container {
   display: flex;
@@ -873,7 +945,7 @@ main .container {
   width: 700px;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
+  /*align-content: space-between;*/
 }
 .goods-catalog article {
   width: 220px;
