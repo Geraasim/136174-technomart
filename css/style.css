@@ -688,7 +688,7 @@ article .flag-new,
   width: 940px;
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 85px;
+  padding-bottom: 65px;
 }
 .brands-item a {
   width: 220px;
@@ -707,7 +707,7 @@ article .flag-new,
 
 .service {
   background-color: #f2f6f8;
-  padding-top: 68px;
+  padding-top: 65px;
   /*padding-bottom: 60px;*/
   /*min-width: 940px;*/
 }
@@ -721,10 +721,12 @@ article .flag-new,
 
 .service-service {
   width: 940px;
-  padding-bottom: 75px;
+  padding-bottom: 70px;
 }
 
-.service-service h3 {
+.service-service h3,
+.promo-promo h3,
+.promo-contacts h3 {
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -733,13 +735,14 @@ article .flag-new,
   text-transform: uppercase;
 }
 
-.service p {
+.service p,
+.promo p {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   color: #000000;
-
+  padding-top: 30px;
 }
 
 .slider-service-right h3 {
@@ -751,8 +754,9 @@ article .flag-new,
   text-transform: uppercase;
 }
 
+
 .slider-service-left {
-  width: 240px;
+  width: 320px;
 }
 
 .slider-service-right {
@@ -769,7 +773,7 @@ article .flag-new,
 }
 
 .slider-service-left li {
-  width: 240px;
+  width: 220px;
   background-color: #32425c;
 
   color: #ffffff;
@@ -797,14 +801,51 @@ article .flag-new,
 .promo .container {
   display: flex;
   padding-bottom: 90px;
+  padding-top: 80px;
 }
 .promo-promo {
   width: 640px;
   padding-right: 120px;
 }
+
+
+
+
+.promo-delivery li {
+  list-style-type: none;
+  position: relative;
+  margin: 20px 0;
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  padding-left: 35px;
+}
+
+.promo-delivery li:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fb565a;
+  position: absolute;
+  left: 0;
+  margin-top: 8px;
+}
+
+.promo .button-promo-promo {
+  margin-top: 40px;
+}
+
+
 .promo .contacts {
   width: 300px;
 }
+
+.promo-contacts p {
+  padding-bottom: 30px;
+}
+
 .promo-contacts .mail {
   display: block;
   background-color: #ee3643;
@@ -821,6 +862,7 @@ article .flag-new,
   /*border: 0;*/
 
   border-radius: 3px;
+  margin-top: 35px;
 }
 
 .main-footer {
@@ -832,7 +874,7 @@ article .flag-new,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 
 ul {
@@ -847,7 +889,7 @@ main-footer h2 {
   justify-content: space-between;
   width: 550px;
   /*list-style-type: none;*/
-  padding-top: 25px;
+  padding-top: 40px;
 }
 
 .footer-menu-main a,
@@ -863,14 +905,14 @@ main-footer h2 {
 
 .main-footer .adress {
   width: 415px;
-  padding-top: 20px;
+  padding-top: 35px;
 }
 .footer-menu-assortment ul {
   display: flex;
   width: 525px;
   justify-content: space-between;
   /*list-style-type: none;*/
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .footer-menu-assortment a,
