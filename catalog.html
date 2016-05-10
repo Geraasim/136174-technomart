@@ -42,8 +42,8 @@
         </div>
         <div class="user-block">
           <div class="account">
-            <a class="name" href="#">О Равшан Джамшутович</a>
-            <a class="logout" href="#">Ы</a>
+            <a class="name" href="#"><span class="icon-user"></span> Равшан Джамшутович</a>
+            <a class="logout" href="#"><span class="icon-logout"></span></a>
           </div>
           <ul class="personal">
             <li><a href="#">Мои заказы</a></li>
@@ -69,10 +69,10 @@
   <main>
     <div class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html"><i></i></a></li>
-        <li><a href="catalog">Каталог</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a>Перфораторы</a></li>
+        <li><a href="index.html"><span class="icon-home"></span></a></li>
+        <li><a href="catalog"><span class="icon-right"></span> Каталог</a></li>
+        <li><a href="#"><span class="icon-right"></span> Инструмент</a></li>
+        <li><a><span class="icon-right"></span> Перфораторы</a></li>
       </ul>
       <div class="main-heading">
         <h1>Перфораторы</h1>
@@ -87,44 +87,51 @@
             <div>
               <input type="range">
             </div>
-            <div>
-              <span>0</span>
-            </div>
-            <div>
+            <div class="filter-price">
+              <!-- <div> -->
+              <span class="value">0</span>
+              <!-- </div> -->
+              <!-- <div> -->
               <span>—</span>
+              <!-- </div> -->
+              <!-- <div> -->
+              <span class="value">30000</span>
+              <!-- </div> -->
             </div>
-            <div>
-              <span>30000</span>
-            </div>
+            <hr>
             <h2>производители</h2>
-            <input type="checkbox" name="brand" id="bosch">
-            <label for="bosch">bosch</label>
-            <input type="checkbox" name="brand" id="interskol">
-            <label for="interskol">интерскол</label>
-            <input type="checkbox" name="brand" id="makita">
-            <label for="makita">makita</label>
-            <input type="checkbox" name="brand" id="dewalt">
-            <label for="dewalt">dewalt</label>
-            <input type="checkbox" name="brand" id="hitachi">
-            <label for="hitachi">hitachi</label>
+            <div class="filter-brands">
+              <input type="checkbox" name="brand" id="bosch">
+              <label for="bosch">bosch</label>
+              <input type="checkbox" name="brand" id="interskol">
+              <label for="interskol">интерскол</label>
+              <input type="checkbox" name="brand" id="makita">
+              <label for="makita">makita</label>
+              <input type="checkbox" name="brand" id="dewalt">
+              <label for="dewalt">dewalt</label>
+              <input type="checkbox" name="brand" id="hitachi">
+              <label for="hitachi">hitachi</label>
+            </div>
+            <hr>
             <h2>питание</h2>
-            <input type="radio" name="power" id="battery">
-            <label for="battery">аккумуляторные</label>
-            <input type="radio" name="power" id="electricity">
-            <label for="electricity">сетевые</label>
+            <div class="filter-power">
+              <input type="radio" name="power" id="battery">
+              <label for="battery">аккумуляторные</label>
+              <input type="radio" name="power" id="electricity">
+              <label for="electricity">сетевые</label>
+            </div>
             <input type="submit" value="Показать">
           </form>
         </section>
         <section class="catalog">
           <div class="catalog-menu">
-            <!-- <span>Сортировка:</span> -->
             <ul>
-              <li>Сортировка:</li>
+              <li><span>Сортировка:</span></li>
               <li><a href="#">по цене</a></li>
               <li><a href="#">по типу</a></li>
               <li><a href="#">по функционалу</a></li>
-              <li><a href="#"><i></i></a></li>
-              <li><a href="#"><i></i></a></li>
+              <li><a href="#"><span class="icon-up-dir"></span></a></li>
+              <li><a href="#"><span class="icon-down-dir"></span></a></li>
             </ul>
           </div>
           <div class="goods-catalog">
@@ -242,10 +249,10 @@
           </div>
           <div class="paginator">
             <ul>
-              <li><a href="#">1</a></li>
+              <li class="active-page"><a href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
-              <li><a href="#">следующая</a></li>
+              <li class="next-page"><a href="#">следующая</a></li>
             </ul>
           </div>
         </section>
@@ -310,3 +317,4 @@
 </body>
 
 </html>
+> > >
