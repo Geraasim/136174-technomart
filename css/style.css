@@ -193,7 +193,7 @@ ul {
 .main-menu {
   width: 940px;
   padding-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .main-menu ul {
@@ -257,7 +257,7 @@ ul {
   font-size: 21px;
   color: #ee3643;
   outline: 3px solid #ffffff;
-  padding: 9px 0;
+  padding: 7px 0;
   width: 270px;
   display: block;
   text-align: center;
@@ -271,7 +271,7 @@ ul {
   display: block;
   width: 270px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 7px;
   /*outline: 1px solid red;*/
 }
 
@@ -379,7 +379,7 @@ ul {
   text-decoration: none;
   border-radius: 3px;
   margin-left: 25px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .assortment .container {
@@ -800,7 +800,7 @@ article .flag-new,
 
 .promo .container {
   display: flex;
-  padding-bottom: 90px;
+  padding-bottom: 95px;
   padding-top: 80px;
 }
 .promo-promo {
@@ -946,13 +946,14 @@ main-footer h2 {
 .info {
   display: flex;
   width: 300px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  align-items: flex-start;
 }
 .info-mail {
-  width: 150px;
+  width: 190px;
 }
 .info-development {
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 /*  CATALOG */
