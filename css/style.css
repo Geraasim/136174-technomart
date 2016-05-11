@@ -152,8 +152,22 @@ ul {
   text-decoration: none;
   padding: 12px 0;
   display: block;
+  /*text-align: center;*/
+  text-align: left;
+}
+
+.order a {
   text-align: center;
 }
+
+.search input {
+  background-color: #293449;
+  color: #ffffff;
+  border-color: #293449;
+
+
+}
+
 
 .bookmark {
   width: 150px;
@@ -172,23 +186,11 @@ ul {
   background-color: #63a63e;
 }
 
-/*
-.order a {
-  color: #ffffff;
-  font-family: "Cuprum", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: normal;
-  padding-top: 18px;
-  text-decoration: none;
+.icon-search, .icon-bookmark, .icon-basket {
+  color: #6a7180;
+  padding: 0 15px;
 }
-*/
 
-/*
-.main-header {
-  padding-bottom: 60px;
-}
-*/
 
 .main-menu {
   width: 940px;
@@ -215,18 +217,6 @@ ul {
   color: #ffffff;
   text-decoration: none;
 }
-
-/*
-.nav {
-  padding-left: 52px;
-  padding-right: 52px;
-}
-*/
-
-/*
-.main-menu a:last-child {
-  margin-right: 55px;
-}*/
 
 .main-header .container {
   display: flex;
@@ -260,8 +250,16 @@ ul {
   padding: 7px 0;
   width: 270px;
   display: block;
-  text-align: center;
+  /*text-align: center;*/
 }
+
+.telephone .icon-phone {
+  color: #b7bfc8;
+  /*text-align: left;*/
+  padding: 0 10px;
+}
+
+
 
 .contacts .adress {
   font-family: "Cuprum", sans-serif;
@@ -299,6 +297,10 @@ ul {
 .login {
   width: 120px;
   margin-left: 20px;
+}
+
+.icon-login {
+  color: #c5c5c5;
 }
 
 .registration {
@@ -446,7 +448,7 @@ ul {
 
 .slider .button-catalog {
   margin-left: 25px;
-  margin-top: 115px;
+  margin-top: 50px;
   width: 195px;
 }
 
@@ -457,6 +459,20 @@ ul {
   font-weight: normal;
   color: #ffffff;
   margin-left: 25px;
+}
+
+.slider .icon-left {
+  font-size: 45px;
+  display: block;
+  margin-left: 5px;
+  margin-top: 25px;
+}
+
+.slider .icon-right {
+  font-size: 45px;
+  display: block;
+  margin-top: -45px;
+  margin-left: 560px;
 }
 
 .discount {
@@ -563,7 +579,7 @@ article h1 {
   font-weight: bold;
   min-height: 40px;
   padding: 0 25px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -743,7 +759,7 @@ article .flag-new,
   line-height: 24px;
   font-weight: normal;
   color: #000000;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .slider-service-right h3 {
@@ -943,7 +959,23 @@ main-footer h2 {
 }
 .social {
   width: 250px;
+  display: flex;
 }
+
+.social a {
+  width: 40px;
+  /*height: 40px;*/
+  /*display: block;*/
+  border-radius: 50%;
+  background-color: #212a3a;
+  margin-right: 5px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 11px 0;
+}
+
+
 .info {
   display: flex;
   width: 300px;
