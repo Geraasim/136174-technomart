@@ -972,7 +972,8 @@ main-footer h2 {
   text-align: center;
   color: #ffffff;
   font-size: 18px;
-  padding: 11px 0;
+  /*padding: 11px 0;*/
+  line-height: 40px;
 }
 
 
@@ -1056,6 +1057,12 @@ main .container {
   color: #000000;
 }
 
+.filter-brands h2, .filter-power h2 {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 25px;
+  padding: 25px 0;
+}
+
 .filter-price {
   display: flex;
   justify-content: space-between;
@@ -1096,11 +1103,82 @@ main .container {
   flex-direction: column;
 }
 
-hr {
-  color: #e5e5e5
-  size: 1px;
-  width: 220px;
-  margin: 25px 0;
+
+
+
+.filter-brands input[type="checkbox"] {
+  display: none;
+}
+
+.filter-brands input[type="checkbox"] + label {
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-left: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-brands input[type="checkbox"] + label::before {
+  content: "\2610";
+  position: absolute;
+  font-family: "symbols-technomart";
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  color: #dadada;
+  top: 0;
+  left: 0;
+}
+
+.filter-brands input[type="checkbox"]:checked + label::before {
+  content: "\2611";
+}
+
+
+
+.filter-power input[type="radio"] {
+  display: none;
+}
+
+.filter-power input[type="radio"] + label {
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-left: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-power input[type="radio"] + label::before {
+  content: "\25cb";
+  position: absolute;
+  font-family: "symbols-technomart";
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  color: #dadada;
+  top: 0;
+  left: 0;
+}
+
+.filter-power input[type="radio"]:checked + label::before {
+  content: "\25cf";
+}
+
+
+
+
+.filter .submit {
+  width: 140px;
+  /*font-family: "PT Sans", sans-serif;*/
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #ffffff;
+  outline: 1 px solid #e5e5e5;
+  padding: 10px 40px;
+  margin-top: 65px;
+  text-transform: uppercase;
 }
 
 .catalog-menu ul {
