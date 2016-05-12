@@ -6,13 +6,13 @@ html, body {
 
 .main-header {
   background-color: #f1f5f7;
-  /*min-width: 940px;*/
+  min-width: 940px;
 }
 
 .top-header {
   background-color: #293449;
   height: 42px;
-  /*min-width: 940px;*/
+  min-width: 940px;
 }
 
 .container {
@@ -26,6 +26,15 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: normal;
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-technomart";
+  src: url("../fonts/symbols-technomart.woff") format("woff"),
+       url("../fonts/symbols-technomart.woff2") format("woff2");
 }
 
 .logo {
@@ -164,7 +173,12 @@ ul {
   background-color: #293449;
   color: #ffffff;
   border-color: #293449;
+  border: 0;
 
+  ::-webkit-input-placeholder {color:#ffffff;opacity: 1;}
+  ::-moz-placeholder {color:#ffffff;opacity: 1;}/* Firefox 19+ */
+  :-moz-placeholder {color:#ffffff;opacity: 1;}/* Firefox 18- */
+  :-ms-input-placeholder {color:#ffffff;opacity: 1;}
 
 }
 
@@ -246,11 +260,13 @@ ul {
   font-family: "Cuprum", sans-serif;
   font-size: 21px;
   color: #ee3643;
-  outline: 3px solid #ffffff;
+  border: 3px solid #ffffff;
   padding: 7px 0;
   width: 270px;
   display: block;
   /*text-align: center;*/
+  box-sizing: border-box;
+  /*padding-left: 10px;*/
 }
 
 .telephone .icon-phone {
@@ -548,7 +564,7 @@ ul {
 .goods-catalog article {
   /*margin-right: 20px;*/
   width: 220px;
-  outline: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   position: relative;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
@@ -585,7 +601,7 @@ article h1 {
 
 article .price {
   font-size: 17px;
-  line-height: 18px;
+  /*line-height: 18px;*/
   text-transform: uppercase;
   display: block;
   min-height: 20px;
@@ -688,13 +704,13 @@ article .flag-new,
   border: 3px solid #63a63e;
 }
 
-.commodity article .actions,
-.goods-catalog article .actions {
+/*.commodity*/ article .actions,
+/*.goods-catalog*/ article .actions {
   display: none;
 }
 
-.commodity article:hover .actions,
-.goods-catalog article:hover .actions {
+/*.commodity*/ article:hover .actions,
+/*.goods-catalog*/ article:hover .actions {
   display: block;
 }
 
@@ -710,7 +726,7 @@ article .flag-new,
 .brands-item a {
   width: 220px;
   height: 145px;
-  outline: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   margin-bottom: 20px;
   position: relative;
 }
@@ -726,7 +742,7 @@ article .flag-new,
   background-color: #f2f6f8;
   padding-top: 65px;
   /*padding-bottom: 60px;*/
-  /*min-width: 940px;*/
+  min-width: 940px;
 }
 .service .container {
   display: flex;
@@ -861,7 +877,7 @@ article .flag-new,
 }
 
 .promo-contacts p {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .promo-contacts .mail {
@@ -885,7 +901,7 @@ article .flag-new,
 
 .main-footer {
   background-color: #32425c;
-  /*min-width: 940px;*/
+  min-width: 940px;
 }
 
 .main-footer .container {
@@ -941,7 +957,7 @@ main-footer h2 {
 
 .sub-footer {
   background-color: #293449;
-  /*min-width: 940;*/
+  min-width: 940px;
 }
 .sub-footer .container {
   display: flex;
@@ -1072,7 +1088,7 @@ main .container {
 .filter-price .value {
   font-family: "PT Sans", sans-serif;
   font-size: 17px;
-  line-height: 18px;
+  /*line-height: 18px;*/
   font-weight: normal;
   color: #000000;
   background-color: #f7f3ec;
@@ -1175,7 +1191,7 @@ main .container {
   font-size: 13px;
   line-height: 18px;
   background-color: #ffffff;
-  outline: 1 px solid #e5e5e5;
+  border: 1 px solid #e5e5e5;
   padding: 10px 40px;
   margin-top: 65px;
   text-transform: uppercase;
@@ -1196,7 +1212,7 @@ main .container {
 }
 .goods-catalog article {
   width: 220px;
-  outline: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   margin-bottom: 20px;
 }
 .catalog-selection {
@@ -1238,6 +1254,7 @@ main .container {
   padding: 10px 30px;
 }
 .affix {
+  min-width: 940px;
   background-color: #f2f6f8;
   padding-top: 60px;
   padding-bottom: 70px;
@@ -1261,14 +1278,7 @@ main .container {
 /*}*/
 
 
-@font-face {
-  font-weight: normal;
-  font-style: normal;
 
-  font-family: "symbols-technomart";
-  src: url("../fonts/symbols-technomart.woff") format("woff"),
-       url("../fonts/symbols-technomart.woff2") format("woff2");
-}
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
