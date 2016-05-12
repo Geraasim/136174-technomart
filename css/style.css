@@ -112,7 +112,7 @@ ul {
   text-decoration: none;
   background-color: #ee3643;
   width: 220px;
-  padding: 9px 0;
+  padding: 10px 0;
 }
 
 .logo-footer {
@@ -155,7 +155,7 @@ ul {
 .search, .bookmark a, .cart a, .order a {
   font-family: "Cuprum", sans-serif;
   font-size: 17px;
-  line-height: 18px;
+  /*line-height: 18px;*/
   font-weight: normal;
   color: #ffffff;
   text-decoration: none;
@@ -209,7 +209,7 @@ ul {
 .main-menu {
   width: 940px;
   padding-bottom: 60px;
-  padding-top: 25px;
+  padding-top: 40px;
 }
 
 .main-menu ul {
@@ -908,7 +908,7 @@ article .flag-new,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 
 ul {
