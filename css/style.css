@@ -155,7 +155,7 @@ ul {
 .search, .bookmark a, .cart a, .order a {
   font-family: "Cuprum", sans-serif;
   font-size: 17px;
-  /*line-height: 18px;*/
+  line-height: 18px;
   font-weight: normal;
   color: #ffffff;
   text-decoration: none;
@@ -1142,7 +1142,7 @@ main .container {
   font-size: 28px;
   width: 28px;
   height: 28px;
-  color: #dadada;
+  color: #c1c1c1;
   top: 0;
   left: 0;
 }
@@ -1173,7 +1173,7 @@ main .container {
   font-size: 28px;
   width: 28px;
   height: 28px;
-  color: #dadada;
+  color: #c1c1c1;
   top: 0;
   left: 0;
 }
@@ -1201,8 +1201,31 @@ main .container {
   background-color: #f7f3ec;
   display: flex;
   justify-content: space-between;
+  /*text-decoration: none;*/
   /*list-style-type: none;*/
 }
+
+.catalog-menu .type-sorting {
+  font-size: 13px;
+  line-height: 18px;
+  color: #c4c1bb;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+  padding-top: 15px;
+
+}
+
+/*.catalog-menu a {*/
+  /*padding-top: 10px;*/
+/*}*/
+
+.catalog-menu .choice {
+  color: #ee3643;
+  border: 0;
+}
+
+
 .goods-catalog {
   display: flex;
   width: 700px;
