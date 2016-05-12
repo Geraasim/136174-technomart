@@ -209,7 +209,7 @@ ul {
 .main-menu {
   width: 940px;
   padding-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .main-menu ul {
@@ -939,7 +939,7 @@ main-footer h2 {
 
 .main-footer .adress {
   width: 415px;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 .footer-menu-assortment ul {
   display: flex;
