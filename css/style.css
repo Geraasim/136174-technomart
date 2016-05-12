@@ -237,7 +237,7 @@ ul {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 940px;
-  padding-top: 50px;
+  padding-top: 55px;
 }
 
 .lead {
@@ -590,7 +590,7 @@ ul {
 article h1 {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 20px;
+  /*line-height: 20px;*/
   color: #000000;
   font-weight: bold;
   min-height: 40px;
@@ -775,7 +775,7 @@ article .flag-new,
   line-height: 24px;
   font-weight: normal;
   color: #000000;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .slider-service-right h3 {
@@ -923,7 +923,7 @@ main-footer h2 {
   justify-content: space-between;
   width: 550px;
   /*list-style-type: none;*/
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .footer-menu-main a,
