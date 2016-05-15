@@ -105,7 +105,7 @@
             </div>
             <div class="filter-brands">
               <h2>производители</h2>
-              <input type="checkbox" checked name="brand" id="bosch">
+              <input type="checkbox" checked name="brand" id="bosch" disabled>
               <label for="bosch">bosch</label>
               <input type="checkbox" name="brand" id="interskol">
               <label for="interskol">интерскол</label>
@@ -129,11 +129,12 @@
         <section class="catalog">
           <div class="catalog-menu">
             <span>Сортировка:</span>
-            <ul>
-              <!-- <li><span>Сортировка:</span></li> -->
-              <li><a class="type-sorting choice" href="#">по цене</a></li>
-              <li><a class="type-sorting" href="#">по типу</a></li>
-              <li><a class="type-sorting" href="#">по функционалу</a></li>
+            <ul class="type-sorting">
+              <li><a class="choice" href="#">по цене</a></li>
+              <li><a href="#">по типу</a></li>
+              <li><a href="#">по функционалу</a></li>
+            </ul>
+            <ul class="up-down">
               <li><a href="#"><span class="icon-up-dir"></span></a></li>
               <li><a href="#"><span class="icon-down-dir"></span></a></li>
             </ul>
