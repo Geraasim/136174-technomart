@@ -1000,19 +1000,35 @@ article .flag-new,
   text-decoration: none;
   padding: 15px 0;
   padding-left: 20px;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+  box-sizing: border-box;
 }
 
 .slider-service-left a {
-
-
   color: #ffffff;
-  /*font-family: "Cuprum", sans-serif;*/
-  /*font-size: 21px;*/
-  /*line-height: 30px;*/
-  /*font-weight: bold;*/
   text-decoration: none;
-  /*padding: 15px 0;*/
 }
+
+.slider-service-left li:hover {
+  background-color: #293449;
+}
+
+.slider-service-left .active-service-left {
+  background-color: #ffffff;
+  border: 0;
+  color: #32425c;
+}
+
+.active-service-left a {
+  color: #32425c;
+}
+
+.active-service-left:hover a {
+  color: #ffffff;
+}
+
+
 
 .promo .container {
   display: flex;
