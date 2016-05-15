@@ -204,12 +204,23 @@ ul {
 }
 
 
-.search .icon-search {
-  position: absolute;
-  left: 300px;
-  top: 10px;
-}
+/*.search .icon-search {*/
+  /*position: absolute;*/
+  /*left: 300px;*/
+  /*top: 10px;*/
+/*}*/
 
+
+
+.search input:before {
+content: "🔍";
+font-family: "symbols-technomart";
+position: absolute;
+color: #ffffff;
+font-size: 17px;
+left: 310px;
+top: 10px;
+}
 
 
 .search input:hover {
@@ -222,11 +233,8 @@ ul {
   /*border-bottom: 1px solid #ffffff;*/
 }
 
-.search input:focus span {
-  color: #ee3643;
-}
 
-.search:focus span {
+.search:focus input::before {
   color: #ee3643;
 }
 
@@ -257,7 +265,7 @@ ul {
   background-color: #518534;
 }
 
-.icon-search, .icon-bookmark, .icon-basket {
+.icon-bookmark, .icon-basket {
   /*color: #6a7180;*/
   color: #ffffff;
   padding: 0 15px;
