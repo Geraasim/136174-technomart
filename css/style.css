@@ -113,6 +113,7 @@ ul {
   background-color: #ee3643;
   width: 220px;
   padding: 9px 0;
+  box-sizing: border-box;
 }
 
 .logo-header:hover {
@@ -460,12 +461,12 @@ top: 10px;
 }
 
 .account .name {
-  width: 240px;
+  width: 250px;
   /*display: block;*/
 }
 
 .account .logout {
-  width: 60px;
+  width: 50px;
 }
 
 .personal {
@@ -1270,7 +1271,7 @@ main .container {
   color: #c1c6ce;
   font-size: 14px;
   line-height: 20px;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 .breadcrumbs .icon-home {
@@ -1320,7 +1321,7 @@ main .container {
 .filter h2 {
   font-family: "PT Sans", sans-serif;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 17px;
   margin-bottom: 15px;
 
   font-weight: bold;
@@ -1663,8 +1664,8 @@ opacity: 0.3;
 
 .range-controls {
   position: relative;
-  height: 41px;
-  padding-top: 39px;
+  height: 40px;
+  padding-top: 43px;
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 10px;
