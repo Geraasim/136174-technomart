@@ -268,7 +268,7 @@ top: 10px;
 .icon-bookmark, .icon-basket {
   /*color: #6a7180;*/
   color: #ffffff;
-  padding: 0 15px;
+  padding: 0 10px;
   opacity: 0.3;
 }
 
@@ -341,7 +341,7 @@ top: 10px;
 .lead {
   width: 197px;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 24px;
   font-family: "Cuprum", sans-serif;;
   font-weight: normal;
   color: #ee3643;
@@ -411,7 +411,7 @@ top: 10px;
 
 .login {
   width: 120px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .icon-login, .icon-user, .icon-logout {
@@ -666,9 +666,9 @@ top: 10px;
   font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
-  padding-top: 28px;
+  padding-top: 29px;
   padding-left: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 29px;
 
 }
 
@@ -989,7 +989,7 @@ article .flag-new,
 }
 
 .slider-service-left li {
-  width: 220px;
+  width: 240px;
   background-color: #32425c;
 
   color: #ffffff;
@@ -1247,7 +1247,7 @@ main .container {
 .breadcrumbs {
   display: flex;
   justify-content: flex-start;
-  margin: 21px 0;
+  margin: 17px 0;
 }
 
 .breadcrumbs a {
@@ -1320,7 +1320,7 @@ main .container {
   font-family: "PT Sans", sans-serif;
   font-size: 17px;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   font-weight: bold;
   text-transform: uppercase;
@@ -1329,8 +1329,8 @@ main .container {
 
 .filter-brands h2, .filter-power h2 {
   border-top: 1px solid #e5e5e5;
-  margin: 15px 0;
-  padding-top: 20px;
+  margin: 20px 0;
+  padding-top: 15px;
   /*padding: 25px 0;*/
 }
 
@@ -1580,7 +1580,7 @@ opacity: 0.3;
 .affix {
   min-width: 940px;
   background-color: #f2f6f8;
-  padding-top: 60px;
+  padding-top: 65px;
   padding-bottom: 70px;
 }
 
@@ -1591,7 +1591,7 @@ opacity: 0.3;
   font-weight: normal;;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 /*form h2 {*/
   /*font-family: PT Sans, sans-serif;*/
