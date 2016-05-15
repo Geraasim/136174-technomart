@@ -912,6 +912,7 @@ article .flag-new,
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .brands-item img {
@@ -1431,6 +1432,7 @@ opacity: 0.3;
   padding: 10px 40px;
   margin-top: 65px;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .catalog-menu {
@@ -1525,6 +1527,7 @@ opacity: 0.3;
   width: 220px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
+  box-sizing: border-box;
 }
 .catalog-selection {
   display: flex;
@@ -1546,6 +1549,7 @@ opacity: 0.3;
   border-radius: 3px;
   text-align: center;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .paginator li:hover {
@@ -1686,7 +1690,8 @@ opacity: 0.3;
   width: 4px;
   height: 4px;
   cursor: pointer;
-  border: 8px solid #fff;
+  border: 8px solid #ffffff;
+  box-sizing: border-box;
   border-radius: 50%;
   background: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
