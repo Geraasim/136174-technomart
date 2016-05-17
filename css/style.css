@@ -113,7 +113,7 @@ main h1 {
 main h2 {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
-  line-height: 30px;
+  /*line-height: 30px;*/
   color: #ffffff;
   font-weight: bold;
 }
@@ -124,7 +124,6 @@ main h3 {
   color: #ffffff;
   font-weight: bold;
 }
-
 
 .logo-header {
   position: absolute;
@@ -138,9 +137,10 @@ main h3 {
   color: #ffffff;
   text-decoration: none;
   background-color: #ee3643;
+  display: block;
   width: 220px;
   padding: 9px 0;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 .logo-header:hover {
@@ -982,6 +982,11 @@ article:hover .actions {
 
 .slider-service-left {
   width: 320px;
+  background: url("../img/shadow.png") no-repeat 230px -7px;
+}
+
+.slider-service-left ul {
+  background: url("../img/shadow.png") no-repeat 231px -7px;
 }
 
 .slider-service-right {
