@@ -1069,13 +1069,13 @@ article:hover .actions {
 .slider-service-right .guaranty {
   min-height: 285px;
   background: url("../img/service-guaranty.png") no-repeat 100% 0;
-  /*display: none;*/
+  display: none;
 }
 
 .slider-service-right .credit {
   min-height: 285px;
   background: url("../img/service-credit.png") no-repeat 150px 0;
-  display: none;
+  /*display: none;*/
 }
 
 .button-credit {
@@ -2017,6 +2017,44 @@ opacity: 1;
   position: absolute;
   top: 50px;
   left: 80px;
-  border: 33px solid #63a63e;
+  border: 22px solid #63a63e;
   border-radius: 50%;
+}
+
+
+/*   CIRCLE  */
+
+.circle {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: #63a63e;
+  border: 0;
+  outline: 0;
+}
+
+.circle::before,
+.circle::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.circle::before {
+  transform: rotate(45deg);
+  width: 20px;
+  height: 7px;
+  top: 15px;
+  left: -7px;
+}
+
+.circle::after {
+  transform: rotate(-45deg);
+  width: 35px;
+  height: 7px;
+  top: 10px;
+  left: 0px;
 }
